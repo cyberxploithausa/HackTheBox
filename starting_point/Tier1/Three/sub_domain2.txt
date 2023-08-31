@@ -1,0 +1,15 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:          http://thetoppers.htb
+[+] Method:       GET
+[+] Threads:      10
+[+] Wordlist:     /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+[+] User Agent:   gobuster/3.1.0
+[+] Timeout:      10s
+===============================================================
+2022/11/20 09:28:32 Starting gobuster in VHOST enumeration mode
+===============================================================
+Found: s3.thetoppers.htb (Status: 502) [Size: 424]
+Found: gc._msdcs.thetoppers.htb (Status: 400) [Size: 306]

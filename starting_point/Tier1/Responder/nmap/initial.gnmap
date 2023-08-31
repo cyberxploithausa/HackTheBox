@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Wed Oct 19 13:57:57 2022 as: nmap -sC -sV -oA nmap/initial -p- --min-rate 5000 10.129.248.130
+Host: 10.129.248.130 ()	Status: Up
+Host: 10.129.248.130 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.52 ((Win64) OpenSSL|1.1.1m PHP|8.1.1)/, 5985/open/tcp//http//Microsoft HTTPAPI httpd 2.0 (SSDP|UPnP)/, 7680/open/tcp//tcpwrapped///	Ignored State: filtered (65532)
+# Nmap done at Wed Oct 19 14:00:26 2022 -- 1 IP address (1 host up) scanned in 149.14 seconds

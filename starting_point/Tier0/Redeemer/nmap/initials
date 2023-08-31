@@ -1,0 +1,9 @@
+# Nmap 7.92 scan initiated Thu Aug 25 13:09:49 2022 as: nmap -sC -sV -Pn -p 3000-9999 -oN nmap/initials 10.129.103.245
+Nmap scan report for 10.129.103.245
+Host is up (0.22s latency).
+Not shown: 6999 closed tcp ports (conn-refused)
+PORT     STATE SERVICE VERSION
+6379/tcp open  redis   Redis key-value store 5.0.7
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug 25 13:19:13 2022 -- 1 IP address (1 host up) scanned in 564.43 seconds

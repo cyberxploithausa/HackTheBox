@@ -1,0 +1,17 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://thetoppers.htb
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,php,
+[+] Timeout:                 10s
+===============================================================
+2022/11/20 09:15:29 Starting gobuster in directory enumeration mode
+===============================================================
+/images               (Status: 301) [Size: 317] [--> http://thetoppers.htb/images/]
+/index.php            (Status: 200) [Size: 11952]                                  

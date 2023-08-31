@@ -1,0 +1,23 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-10-13 14:36 WAT
+Nmap scan report for 10.129.217.138
+Host is up.
+
+PORT     STATE    SERVICE VERSION
+3306/tcp filtered mysql
+Too many fingerprints match this host to give specific OS details
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT        ADDRESS
+1   304.08 ms  10.10.16.1
+2   ... 7
+8   1708.84 ms 10.10.16.1
+9   1708.81 ms 10.10.16.1
+10  1708.79 ms 10.10.16.1
+11  ... 12
+13  1354.89 ms 10.10.16.1
+14  1493.87 ms 10.10.16.1
+15  1493.95 ms 10.10.16.1
+16  ... 30
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 23.60 seconds
