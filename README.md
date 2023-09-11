@@ -25,7 +25,7 @@ Here are some of the key CTF write-ups available in this repository:
   - Difficulty level
   - Write-up and explanation
 
-- [Machine Name 2](./machine-name-2/README.md)
+- [OPEN_SOURCE](machines/OpenSource)
   - Description of the machine
   - Difficulty level
   - Write-up and explanation
@@ -34,7 +34,7 @@ Here are some of the key CTF write-ups available in this repository:
 
 ## Machine List
 
-You can find a list of all the machines I have completed and written write-ups for in the [Machine List](MACHINE-LIST.md) file.
+You can find a list of all the machines I have completed and written write-ups for in the [Machine List](#ctf-write-ups) file.
 
 ## Contributing
 
