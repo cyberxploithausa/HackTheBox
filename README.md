@@ -20,7 +20,7 @@ Feel free to explore the write-ups, and if you find them helpful or have any fee
 
 Here are some of the key CTF write-ups available in this repository:
 
-- [Machine Name 1](./machine-name-1/README.md)
+- [STARTING_POINT](starting_point)
   - Description of the machine
   - Difficulty level
   - Write-up and explanation
