@@ -1,0 +1,2 @@
+#!/bin/sh
+cat /proc/aipc_dev/dsp/log/contents > /var/config/dsp_log.txt

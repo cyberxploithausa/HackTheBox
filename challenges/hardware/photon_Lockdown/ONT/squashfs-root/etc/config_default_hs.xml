@@ -1,0 +1,5 @@
+<Config_Information_File_HS>
+<Value Name="WAN_PHY_PORT" Value="5"/>
+<Value Name="PON_MODE" Value="1"/>
+<Value Name="DEFAULT_WLAN_SSID" Value="WIFI-7001"/>
+</Config_Information_File_HS>

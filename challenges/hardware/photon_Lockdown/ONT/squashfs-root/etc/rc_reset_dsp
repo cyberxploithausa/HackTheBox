@@ -1,0 +1,25 @@
+#!/bin/sh
+
+#1.Stop DSP running
+#bit 5 is 5281 reset. write 0 to disable 5281
+aipc_util -w -d 0xb8000044 -N 0x20
+
+#2.reset voip history data
+echo 1 > /proc/voip/reset_event_history
+
+#3.Setup memory zone as default setting
+aipc_util -t 0
+aipc_util -z
+
+#4.Boot DSP
+aipc_util -e
+aipc_util -w -d 0xb0000400  -i /image/dsp.img 
+aipc_util -b
+
+if [ -x "/bin/wait_dsp" ]; then
+	wait_dsp
+else
+	echo "no wait_dsp, so force to sleep 5 seconds..."
+	sleep 5
+fi
+

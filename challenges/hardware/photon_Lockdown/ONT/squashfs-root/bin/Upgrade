@@ -1,0 +1,460 @@
+#!/bin/ash 
+#
+#usage: logo [FILENAME] [SERVERIP] [USERNAME] [PASSWORD]
+#       cfgc [FILENAME] [SERVERIP] [USERNAME] [PASSWORD]
+#       boot [FILENAME] [SERVERIP] [USERNAME] [PASSWORD]
+#       app  [FILENAME] [SERVERIP] [USERNAME] [PASSWORD]
+#       hdv_auth [FILENAME] [SERVERIP] [USERNAME] [PASSWORD]
+#       checklogo
+#       checkcfgc
+#	hdv_auth_status
+
+
+size3M=3145728
+size7M=7340032
+size8M=8388608
+FileSize=0
+LargeSize=20480
+MaxCfgSize=122880
+BootPartSize=655360
+TMP_BOOT_FILE="/tmp/tmp_plr.img"
+TMP_APP_FILE="/tmp/tmp_img.tar"
+TMP_TOPBAR_FILE="/tmp/tmp_topbar.jpg"
+TMP_CFG_FILE="/tmp/tmp_config.xml"
+HDV_CFG_FILE="/var/config/cfgc_default.xml"
+LASTGOOD_FILE="/var/config/config.xml"
+DEFAULT_FILE="/etc/config_default.xml"
+BOOTPARTITION="/dev/mtd0"
+TOPBAR_FILE="/var/config/topbar_cfgc.jpg"
+TMP_AUTH_FILE="/tmp/tmp_hdv_mac_auth.sec"
+HDV_AUTH_FILE="/var/config/hdv_mac_auth.sec"
+MaxAuthSize=20480
+
+app_count=300
+
+file=$1
+addr=$2
+username=$3
+password=$4
+
+#k_size="0x"`cat /proc/mtd | grep \"k"0"\" | awk '{print $2}'`
+#r_size="0x"`cat /proc/mtd | grep \"k"0"\" | awk '{print $2}'`
+#let app_size=k_size+r_size
+#let total_app_size=2*app_size
+#if [ "$total_app_size" -ge "$size8M" ]; then
+#	flash_16M=true
+#fi
+#
+#if [ $flash_16M ]; then
+#	echo "flash is 16M"
+#else
+#	echo "flash is 8M"
+#fi
+
+
+default_cs(){
+		[ -f ${HDV_CFG_FILE} ] 
+		if [ "$?" = "0" ]; then
+			flash default cs
+		else
+			flash default bcs
+		fi
+}
+
+check_space(){
+	if [ "${1}" = "" -o ! -f ${1} ]; then
+		_FILE_PATH="/var/config"
+		file_size=100
+	else
+		_FILE_NAME="${1}"
+#		_FILE_PATH=${_FILE_NAME%/*}
+		_FILE_PATH="/var/config"
+		output_result=$(ls -s ${_FILE_NAME} )
+		set ${output_result}
+		file_size=${1}
+	fi
+	output_result=$( df ${_FILE_PATH} )
+	set ${output_result}
+	space_size=${11}
+	whole_space=${9}
+	if [ "${whole_space}" -gt "1000" ]; then
+		file_size=`expr ${file_size} + ${file_size}`
+	fi
+	if [ ${space_size} -lt ${file_size} -o ${space_size} = "0" ]; then
+		echo "FATAL ERROR: Not enough space ${space_size}/${file_size}"
+		return  1
+	fi
+	return 0
+}
+
+
+logo_proc(){
+	if [ -f $TOPBAR_FILE ]; then
+		rm -f $TOPBAR_FILE 
+	fi
+
+	if [ -f $TMP_TOPBAR_FILE ]; then
+		rm -f $TMP_TOPBAR_FILE 
+	fi
+
+	if [ "${file##*.}"x = "jpg"x ]; then
+		ftpget -u $username -p $password $addr $TMP_TOPBAR_FILE $file
+	else
+		echo  "Error:Please input '.jpg' type logo file!"
+		exit 0
+	fi
+	if [ -d /var/config/ ]; then
+		if [ -f $TMP_TOPBAR_FILE ]; then
+			FileSize=`ls -l $TMP_TOPBAR_FILE | awk '{print $5}'`
+		else
+			echo  "Error:Create $TMP_TOPBAR_FILE error!"
+			exit 0
+		fi
+		if [ "$FileSize" -ge "$LargeSize" ]; then
+			echo  "Error:File $1 is too large and must be less than 20K bytes!!"
+			exit 0
+		else
+			result=$(check_space "${TMP_TOPBAR_FILE}" )
+			if [ "$?" = "1" ]; then
+				echo $result
+				return 1
+			else
+				cp -af $TMP_TOPBAR_FILE   /var/config/topbar_cfgc.jpg
+				FileSize=`ls -l $TOPBAR_FILE | awk '{print $5}'`
+				if [ "$FileSize" -le "100" ]; then
+					echo "Update $file error! -1"
+					rm -f $TOPBAR_FILE
+					exit 0
+				fi
+#				cp -af  /var/config/config_bak.xml /var/config/config_bak.xml.bak
+#				rm -f /var/config/config_bak.xml.bak
+				echo "Update $file Successfully! $FileSize"
+			fi
+		fi
+	else
+		echo  "Error:Flash partition directory does not exist, please load partition to file system first!"
+		exit 0
+	fi
+	return 0
+}
+
+cfgc_proc(){
+
+         if [ -f $TMP_CFG_FILE ]; then
+                 rm $TMP_CFG_FILE 
+         fi
+
+         if [ "${file##*.}"x = "xml"x ]; then
+                 ftpget -u $username -p $password $addr $TMP_CFG_FILE $file
+         else
+                 echo  "Error:Please input '.xml' type logo file!"
+                 exit 0
+         fi
+ 
+         if [ -d /var/config/ ]; then
+                 if [ -f $TMP_CFG_FILE ]; then
+                         FileSize=`ls -l $TMP_CFG_FILE | awk '{print $5}'`
+                 else
+                         echo  "Error:Create $TMP_CFG_FILE error!"
+                         exit 0
+                 fi
+                 if [ "$FileSize" -ge "$MaxCfgSize" ]; then
+                         echo  "Error:File $1 is too large and must be less than 80K bytes!!"
+                         exit 0
+                 else
+                         result=$(check_space "${TMP_CFG_FILE}" )
+                         if [ "$?" = "1" ]; then
+                                 echo $result
+                                 return 1
+                         else
+                                 cp -af $TMP_CFG_FILE  $HDV_CFG_FILE 
+                                 result=$(default_cs)
+                                 echo ${result} "$?"
+				 echo -e "\n Update $file Successfully!\n"
+				 echo -e "Reset CS to default configuration success.\n"
+				 echo -e "Please reboot system.\n"
+                         fi
+                 fi
+         else
+                 echo  "Error:Flash partition directory does not exist, please load partition to file system first!"
+                 exit 0
+         fi
+         return 0
+ }
+
+boot_proc(){
+	echo "NO support updating boot!"
+	exit 0
+	if [ "${file##*.}"x = "img"x ]; then
+		ftpget -u $username -p $password $addr $TMP_BOOT_FILE $file
+	else
+		echo  "Error:Please input '.img' type bootloader image file!"
+		exit 0
+	fi
+
+	if [ -e $BOOTPARTITION ]; then
+		if [ -f $TMP_BOOT_FILE ]; then
+			FileSize=`ls -l $TMP_BOOT_FILE | awk '{print $5}'`
+		else
+			echo  "Error:Create $TMP_BOOT_FILE error!"
+			exit 0
+		fi
+		if [ "$FileSize" -ge "$BootPartSize" ]; then
+			echo  "Error:File $1 is too large and must be less than 256K bytes!!"
+			exit 0
+		else
+			flash_eraseall $BOOTPARTITION
+			cat $TMP_BOOT_FILE > $BOOTPARTITION
+			echo "Update boot success."
+			echo "Please reboot system."
+		fi
+	else
+		echo  "Error:Flash Boot partition does not exist, please load partition to file system first!"
+		exit 0
+	fi
+	return 0
+}
+
+app_proc(){
+
+	if [ -f $TMP_APP_FILE ]; then
+		rm $TMP_APP_FILE 
+	fi
+
+	if [ "${file##*.}"x = "tar"x ]; then
+		ftpget -u $username -p $password $addr $TMP_APP_FILE $file
+	else
+		echo  "Error:Please input '.tar' type app image file!"
+		killall app_wait
+		exit 0
+	fi
+	
+	if [ -f $TMP_APP_FILE ]; then
+		echo "Download app file OK!"
+	else
+		echo "Error:Create $TMP_APP_FILE error!"
+		killall app_wait
+		exit 0 
+	fi
+
+	sw_active=`nv  getenv sw_active | sed 's/=/ /'`
+	sw_active=`echo $sw_active  | awk '{print $2}'`
+	
+    	if [ "$sw_active" = "1" ]; then
+    		t_sw_active="0"
+    	else
+    		t_sw_active="1"
+    	fi
+    
+#	ls >/tmp/app.update
+    	/etc/scripts/fwu_starter.sh $t_sw_active $TMP_APP_FILE
+	nv setenv sw_commit $t_sw_active
+	ls >/tmp/app.update
+	killall app_wait
+	return 0
+}
+
+check_waiting(){
+	i=0
+	while [ $i -le ${app_count} ]
+        do
+                echo "waiting"
+                sleep 1
+                if [ -f /tmp/app.update ]; then
+                        rm /tmp/app.update
+                        exit
+                fi
+		i=$(($i+1))
+        done
+}
+
+checklogo_proc(){
+	logofile_size=0
+	logo_info=`ls -l /var/config/topbar_cfgc.jpg`
+	logofile_size=`echo $logo_info  | awk '{print $5}'`
+	if [ "$logofile_size" = "" ]; then 
+		echo "checkresult error, check logo file error! -1"
+		exit 0
+	fi
+	
+	if [ "$logofile_size" -le "100" ]; then
+		echo "checklogo error, check logo file error! -1"
+		exit 0
+	fi
+	echo "checklogo PASS! $logofile_size"
+}
+
+checkcfgc_proc(){
+	cfgcfile_size=0
+	cfgc_info=`ls -l /var/config/cfgc_default.xml`
+	cfgcfile_size=`echo $cfgc_info  | awk '{print $5}'`
+	if [ "$cfgcfile_size" = "" ]; then 
+		echo "checkcfgc error, check cfgc file error! -1"
+		exit 0
+	fi
+
+	if [ "$cfgcfile_size" -le "10" ]; then
+		echo "checkcfgc error, check cfgc file error! -1"
+		exit 0
+	fi
+	echo "checkcfgc PASS!"
+}
+
+auth_proc(){
+
+         if [ -f $TMP_AUTH_FILE ]; then                                        
+                 rm -f $TMP_AUTH_FILE                                          
+         fi 
+ 
+         if [ -f $HDV_AUTH_FILE ]; then
+                 rm -f $HDV_AUTH_FILE
+         fi  
+
+         if [ "${file##*.}"x = "sec"x ]; then
+                 ftpget -u $username -p $password $addr $TMP_AUTH_FILE $file
+         else
+                 echo  "Error:Please input '.sec' type auth file!"
+                 exit 0
+         fi
+ 
+         if [ -d /var/config/ ]; then
+                 if [ -f $TMP_AUTH_FILE ]; then
+                         FileSize=`ls -l $TMP_AUTH_FILE | awk '{print $5}'`
+                 else
+                         echo  "Error:Create $TMP_AUTH_FILE error!"
+                         exit 0
+                 fi
+                 if [ "$FileSize" -ge "$MaxAuthSize" ]; then
+                         echo  "Error:File $1 is too large and must be less than 20K bytes!!"
+                         exit 0
+                 else
+                         result=$(check_space "${TMP_AUTH_FILE}" )
+                         if [ "$?" = "1" ]; then
+                                 echo $result
+                                 return 1
+                         else
+                                 cp -af $TMP_AUTH_FILE  $HDV_AUTH_FILE 
+				 echo -e "\n Upload and update $file Successfully!\n"
+                         fi
+                 fi
+         else
+                 echo  "Error:Flash partition directory does not exist, please load partition to file system first!"
+                 exit 0
+         fi
+         return 0
+ }
+
+hdv_auth_status_proc(){
+	run_info=`hdv_mac_unsec   /var/config/hdv_mac_auth.sec  /tmp/The_hdv_mac_auth `
+	if [ -f /tmp/The_hdv_mac_auth ]; then
+        	echo "hdv_mac_unsec success." >/dev/null
+	else
+        	echo "Version:202201181139-NULL" >> /tmp/The_hdv_mac_auth
+        	echo "Begin" >> /tmp/The_hdv_mac_auth
+        	echo "End" >> /tmp/The_hdv_mac_auth
+	fi
+ 
+	auth_success=`hdv_mac_check`
+	echo -e "$auth_success" 
+}
+
+case "$0" in
+  "/sbin/logo" | "logo")
+	if [ "$1" != "" ] && [ "$2" != "" ] && [ "$3" != "" ] && [ "$4" != "" ]; then
+		result=$( logo_proc )
+		echo ${result} "$?"	
+#		logo_proc	
+	else
+		echo 'boot [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be bootloader image file'
+		echo 'logo [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be jpg'
+		echo 'cfgc [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be UTF-8 format'
+		echo 'app  [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be .tar format'
+		echo 'hdv_auth  [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be encrypted format'
+		exit 1
+	fi
+  	;;
+
+  "/sbin/cfgc" | "cfgc")
+	if [ "$1" != "" ] && [ "$2" != "" ] && [ "$3" != "" ] && [ "$4" != "" ]; then
+		result=$( cfgc_proc )
+		echo ${result} "$?"		
+	else
+		echo 'boot [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be bootloader image file'
+		echo 'logo [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be jpg'
+		echo 'cfgc [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be UTF-8 format'
+		echo 'app  [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be .tar format'
+		echo 'hdv_auth  [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be encrypted format'
+		exit 1
+	fi
+	;;
+
+  "/sbin/boot" | "boot")
+	if [ "$1" != "" ] && [ "$2" != "" ] && [ "$3" != "" ] && [ "$4" != "" ]; then
+		result=$( boot_proc )
+		echo ${result} "$?"		
+	else
+		echo 'boot [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be bootloader image file'
+		echo 'logo [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be jpg'
+		echo 'cfgc [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be UTF-8 format'
+		echo 'app  [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be .tar format'
+		echo 'hdv_auth  [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be encrypted format'
+		exit 1
+	fi
+	;;
+
+  "/sbin/app" | "app")
+	if [ "$1" != "" ] && [ "$2" != "" ] && [ "$3" != "" ] && [ "$4" != "" ]; then
+#		check_waiting &
+		/bin/app_wait &
+		result=$( app_proc )
+		echo ${result} "$?"		
+	else
+		echo 'boot [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be bootloader image file'
+		echo 'logo [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be jpg'
+		echo 'cfgc [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be UTF-8 format'
+		echo 'app  [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be .tar format'
+		echo 'hdv_auth  [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be encrypted format'
+		exit 1
+	fi
+	;;
+
+  "/sbin/hdv_auth" | "hdv_auth")
+	if [ "$1" != "" ] && [ "$2" != "" ] && [ "$3" != "" ] && [ "$4" != "" ]; then
+		result=$( auth_proc )
+		echo ${result} "$?"
+	else
+		echo 'boot [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be bootloader image file'
+		echo 'logo [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be jpg'
+		echo 'cfgc [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be UTF-8 format'
+		echo 'app  [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be .tar format'
+		echo 'hdv_auth  [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be encrypted format'
+		exit 1
+	fi
+	;;
+
+  "/sbin/checklogo" | "checklogo")
+	result=$( checklogo_proc )
+	echo ${result} "$?"		
+	;;
+
+  "/sbin/checkcfgc" | "checkcfgc")
+	result=$( checkcfgc_proc )
+	echo ${result} "$?"		
+	;;
+
+  "/sbin/hdv_auth_status" | "hdv_auth_status")
+	result=$( hdv_auth_status_proc )
+	echo hdv_auth_status=${result}
+	;;
+
+  "*")
+	echo 'boot [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be bootloader image file'
+	echo 'logo [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be jpg '
+	echo 'cfgc [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be UTF-8 format'
+	echo 'app  [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be .tar format'
+	echo 'hdv_auth  [FILENAME] [SERVERIP] [USERNAME] [PASSWORD], file must be encrypted format'
+	;;
+esac
+
+
+

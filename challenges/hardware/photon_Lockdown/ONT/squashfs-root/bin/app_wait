@@ -1,0 +1,28 @@
+#!/bin/ash 
+#
+#usage: logo [FILENAME] [SERVERIP] [USERNAME] [PASSWORD]
+#       cfgc [FILENAME] [SERVERIP] [USERNAME] [PASSWORD]
+#       boot [FILENAME] [SERVERIP] [USERNAME] [PASSWORD]
+#       app  [FILENAME] [SERVERIP] [USERNAME] [PASSWORD]
+#
+
+
+
+app_count=300
+
+
+check_waiting(){
+	i=0
+	while [ $i -le ${app_count} ]
+        do
+                echo "waiting"
+                sleep 1
+                if [ -f /tmp/app.update ]; then
+                        rm /tmp/app.update
+                        exit
+                fi
+		i=$(($i+1))
+        done
+}
+
+check_waiting

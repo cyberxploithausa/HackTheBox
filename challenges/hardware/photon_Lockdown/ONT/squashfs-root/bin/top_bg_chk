@@ -1,0 +1,10 @@
+#!/bin/ash
+
+TOPBAR_FILE="/var/config/topbar_cfgc.jpg"
+TOP_BG_FILE="/home/httpd/web/graphics/top_bg.jpg"
+
+if [ -f $TOPBAR_FILE ]; then
+	echo "$TOPBAR_FILE  exist!"
+else
+ 	ln -s   $TOP_BG_FILE  $TOPBAR_FILE 
+fi

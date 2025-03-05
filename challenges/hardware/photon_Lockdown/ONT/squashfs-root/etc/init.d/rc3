@@ -1,0 +1,9 @@
+configd&
+syn_pon_mode.sh
+rtkbosa -c /var/config/rtl-3320-backup.bin
+/bin/checkomci
+/bin/sh /etc/scripts/modutils.sh
+/bin/initRGapi
+/etc/insdrv.sh
+/etc/runsdk.sh
+/bin/sh /etc/scripts/ins_rtk_snooping_mod.sh

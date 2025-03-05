@@ -1,0 +1,5 @@
+kernel/drivers/net/ethernet/realtek/rtl86900/sdk/src/module/ds_pkt_bcaster/dpbcaster.ko
+kernel/drivers/net/ethernet/realtek/rtl86900/sdk/src/module/epon_drv/epon_drv.ko
+kernel/drivers/net/ethernet/realtek/rtl86900/sdk/src/module/epon_polling/epon_polling.ko
+kernel/drivers/net/ethernet/realtek/rtl86900/sdk/src/module/epon_mpcp/epon_mpcp.ko
+kernel/drivers/net/ethernet/realtek/rtl86900/igmpHookModule/rtk_igmp_hook.ko

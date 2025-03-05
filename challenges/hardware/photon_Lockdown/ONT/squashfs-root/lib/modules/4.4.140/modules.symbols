@@ -1,0 +1,18 @@
+# Aliases for symbols, used by symbol_request().
+alias symbol:rt_igmpHook_whiteList_add rtk_igmp_hook
+alias symbol:rt_igmpHook_groupWeight_del rtk_igmp_hook
+alias symbol:rt_igmpHook_devConfig_set rtk_igmp_hook
+alias symbol:rt_igmpHook_groupToPsTbl_add rtk_igmp_hook
+alias symbol:ds_pkt_bcaster_ds_tag_operation_flush dpbcaster
+alias symbol:rt_igmpHook_groupToPsTbl_del rtk_igmp_hook
+alias symbol:rt_igmpHook_whiteList_del rtk_igmp_hook
+alias symbol:ds_pkt_bcaster_ds_tag_operation_del dpbcaster
+alias symbol:ds_pkt_bcaster_ds_bc_gem_flow_id_set dpbcaster
+alias symbol:rt_igmpHook_groupWeight_add rtk_igmp_hook
+alias symbol:rt_igmpHook_nextValidGroupStatistic_get rtk_igmp_hook
+alias symbol:ds_pkt_bcaster_ds_tag_operation_add dpbcaster
+alias symbol:rt_igmpHook_devStatistic_get rtk_igmp_hook
+alias symbol:rt_igmpHook_brDevConfig_get rtk_igmp_hook
+alias symbol:rt_igmpHook_brDevConfig_set rtk_igmp_hook
+alias symbol:ds_pkt_bcaster_ds_tag_operation_dump dpbcaster
+alias symbol:rt_igmpHook_devConfig_get rtk_igmp_hook

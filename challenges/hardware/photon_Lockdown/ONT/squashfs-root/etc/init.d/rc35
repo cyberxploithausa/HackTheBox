@@ -1,0 +1,5 @@
+fw_loaded.sh
+echo 'Turn on phy power...'
+/bin/sh /etc/scripts/board_init.sh
+/bin/echo 4096 > /proc/sys/vm/min_free_kbytes
+/etc/scripts/vm_tuning.sh

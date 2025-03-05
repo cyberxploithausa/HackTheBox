@@ -1,0 +1,1199 @@
+<Value Name="WAN_MODE" Value="7"/>
+<Value Name="LAN_IP_ADDR" Value="192.168.1.1"/>
+<Value Name="LAN_SUBNET" Value="255.255.255.0"/>
+<Value Name="LAN_ENABLE_IP2" Value="0"/>
+<Value Name="LAN_IP_ADDR2" Value="192.168.100.1"/>
+<Value Name="LAN_SUBNET2" Value="255.255.255.0"/>
+<Value Name="LAN_DHCP" Value="0"/>
+<Value Name="LAN_DHCP_POOLUSE" Value="0"/>
+<Value Name="LAN_DHCP_START" Value="2"/>
+<Value Name="LAN_DHCP_END" Value="100"/>
+<Value Name="LAN_DHCP_POOL_START" Value="192.168.1.33"/>
+<Value Name="LAN_DHCP_POOL_END" Value="192.168.1.254"/>
+<Value Name="LAN_DHCP_DNS_OPT" Value="0"/>
+<Value Name="DHCPS_DNS1" Value="0.0.0.0"/>
+<Value Name="DHCPS_DNS2" Value="0.0.0.0"/>
+<Value Name="DHCPS_DNS3" Value="0.0.0.0"/>
+<Value Name="LAN_DHCP_LEASE" Value="86400"/>
+<Value Name="LAN_DHCP_DOMAIN" Value="bbrouter"/>
+<Value Name="LAN_RIP" Value="0"/>
+<Value Name="LAN_AUTOSEARCH" Value="0"/>
+<Value Name="DNS_MODE" Value="0"/>
+<Value Name="DNS1" Value="0.0.0.0"/>
+<Value Name="DNS2" Value="0.0.0.0"/>
+<Value Name="DNS3" Value="0.0.0.0"/>
+<Value Name="DHCPS" Value="172.19.31.4"/>
+<Value Name="DHCP_MODE" Value="2"/>
+<Value Name="ADSL_MODE" Value="83"/>
+<Value Name="ADSL_OLR" Value="3"/>
+<Value Name="RIP_ENABLE" Value="0"/>
+<Value Name="RIP_VERSION" Value="1"/>
+<Value Name="IPF_OUT_ACTION" Value="1"/>
+<Value Name="IPF_IN_ACTION" Value="1"/>
+<Value Name="MACF_OUT_ACTION" Value="1"/>
+<Value Name="MACF_IN_ACTION" Value="1"/>
+<Value Name="PORT_FW_ENABLE" Value="0"/>
+<Value Name="DMZ_ENABLE" Value="0"/>
+<Value Name="DMZ_IP" Value="0.0.0.0"/>
+<Value Name="USER_NAME" Value="user"/>
+<Value Name="USER_PASSWORD" Value="user"/>
+<Value Name="DEVICE_TYPE" Value="1"/>
+<Value Name="INIT_LINE" Value="1"/>
+<Value Name="INIT_SCRIPT" Value="1"/>
+<Value Name="VC_AUTOSEARCH" Value="0"/>
+<Value Name="BR_AGEING_TIME" Value="7200"/>
+<Value Name="BR_STP_ENABLED" Value="0"/>
+<Value Name="MP_MODE" Value="12"/>
+<Value Name="QOS_UPRATE" Value="0"/>
+<Value Name="QOS_POLICY" Value="0"/>
+<Value Name="TOTAL_BANDWIDTH" Value="100000"/>
+<Value Name="TOTAL_BANDWIDTH_LIMIT" Value="0"/>
+<Value Name="QOS_MODE" Value="0"/>
+<Value Name="IP_QOS_QUEUE_NUM" Value="4"/>
+<Value Name="IGMP_PROXY" Value="1"/>
+<Value Name="IGMP_PROXY_ITF" Value="65535"/>
+<Value Name="SPC_ENABLED" Value="0"/>
+<Value Name="SPC_IPTYPE" Value="0"/>
+<Value Name="URL_CAPABILITY" Value="0"/>
+<Value Name="MULTI_LINGUAL_STATE" Value="en"/>
+<Value Name="TFTP_SERVER_ADDR" Value="tftp://0.0.0.0"/>
+<Value Name="POSIX_TZ_STRING" Value=""/>
+<Value Name="BOOT_FILENAME" Value=""/>
+<Value Name="NTP_ENABLED" Value="0"/>
+<Value Name="NTP_TIMEZONE_DB_INDEX" Value="259"/>
+<Value Name="DST_ENABLED" Value="1"/>
+<Value Name="NTP_SERVER_ID" Value="0"/>
+<Value Name="NTP_SERVER_HOST1" Value="203.117.180.36"/>
+<Value Name="NTP_SERVER_HOST2" Value="220.130.158.52"/>
+<Value Name="UPNP" Value="0"/>
+<Value Name="UPNP_EXT_ITF" Value="255"/>
+<Value Name="DOMAINBLK_CAPABILITY" Value="0"/>
+<Value Name="ENABLE_QOS" Value="0"/>
+<Value Name="IPV6_LAN_IP_ADDR" Value="fe80::1"/>
+<Value Name="AUTO_CHANNEL" Value="1"/>
+<Value Name="CHANNEL" Value="44"/>
+<Value Name="WEP" Value="0"/>
+<Value Name="WEP64_KEY1" Value="0000000000"/>
+<Value Name="WEP64_KEY2" Value="0000000000"/>
+<Value Name="WEP64_KEY3" Value="0000000000"/>
+<Value Name="WEP64_KEY4" Value="0000000000"/>
+<Value Name="WEP128_KEY1" Value="00000000000000000000000000"/>
+<Value Name="WEP128_KEY2" Value="00000000000000000000000000"/>
+<Value Name="WEP128_KEY3" Value="00000000000000000000000000"/>
+<Value Name="WEP128_KEY4" Value="00000000000000000000000000"/>
+<Value Name="WEP_DEFAULT_KEY" Value="0"/>
+<Value Name="WEP_KEY_TYPE" Value="0"/>
+<Value Name="FRAG_THRESHOLD" Value="2346"/>
+<Value Name="SUPPORTED_RATES" Value="4095"/>
+<Value Name="BEACON_INTERVAL" Value="100"/>
+<Value Name="PREAMBLE_TYPE" Value="0"/>
+<Value Name="BASIC_RATES" Value="496"/>
+<Value Name="RTS_THRESHOLD" Value="2347"/>
+<Value Name="AUTH_TYPE" Value="2"/>
+<Value Name="HIDDEN_SSID" Value="0"/>
+<Value Name="WLAN_DISABLED" Value="0"/>
+<Value Name="WLAN_RFPOWER_SCALE" Value="0"/>
+<Value Name="INACTIVITY_TIME" Value="30000"/>
+<Value Name="RATE_ADAPTIVE_ENABLED" Value="1"/>
+<Value Name="DTIM_PERIOD" Value="1"/>
+<Value Name="WLAN_MODE" Value="0"/>
+<Value Name="NETWORK_TYPE" Value="0"/>
+<Value Name="WLAN_ENCRYPT" Value="6"/>
+<Value Name="WLAN_ENABLE_SUPP_NONWPA" Value="0"/>
+<Value Name="WLAN_SUPP_NONWPA" Value="0"/>
+<Value Name="WLAN_WPA_AUTH" Value="2"/>
+<Value Name="WLAN_WPA_CIPHER_SUITE" Value="3"/>
+<Value Name="WLAN_WPA_PSK" Value="12345678"/>
+<Value Name="WLAN_WPA_GROUP_REKEY_TIME" Value="86400"/>
+<Value Name="MAC_AUTH_ENABLED" Value="0"/>
+<Value Name="RS_IP" Value="0.0.0.0"/>
+<Value Name="RS_PORT" Value="1812"/>
+<Value Name="RS_PASSWORD" Value=""/>
+<Value Name="RS_MAXRETRY" Value="3"/>
+<Value Name="RS_INTERVAL_TIME" Value="5"/>
+<Value Name="ACCOUNT_RS_ENABLED" Value="0"/>
+<Value Name="ACCOUNT_RS_IP" Value="0.0.0.0"/>
+<Value Name="ACCOUNT_RS_PORT" Value="0"/>
+<Value Name="ACCOUNT_RS_PASSWORD" Value=""/>
+<Value Name="ACCOUNT_RS_UPDATE_ENABLED" Value="0"/>
+<Value Name="ACCOUNT_RS_UPDATE_DELAY" Value="0"/>
+<Value Name="ACCOUNT_RS_MAXRETRY" Value="0"/>
+<Value Name="ACCOUNT_RS_INTERVAL_TIME" Value="0"/>
+<Value Name="WLAN_ENABLE_1X" Value="0"/>
+<Value Name="WLAN_PSK_FORMAT" Value="0"/>
+<Value Name="WPA2_CIPHER_SUITE" Value="3"/>
+<Value Name="WLAN_DOTIEEE80211W" Value="0"/>
+<Value Name="WLAN_SHA256" Value="0"/>
+<Value Name="WLAN_MACAC_ENABLED" Value="0"/>
+<Value Name="WLAN_BLOCK_RELAY" Value="0"/>
+<Value Name="WLAN_BLOCK_ETH2WIR" Value="0"/>
+<Value Name="WLAN_ITF_GROUP" Value="0"/>
+<Value Name="WLAN_BLOCK_MBSSID" Value="0"/>
+<Value Name="WLAN_BAND" Value="76"/>
+<Value Name="WLAN_FIX_RATE" Value="1"/>
+<Value Name="WLAN_QoS" Value="1"/>
+<Value Name="WLAN_BEACON_ADVERTISEMENT" Value="1"/>
+<Value Name="WIFI_REGDOMAIN_DEMO" Value="0"/>
+<Value Name="WLAN_PROTECTON" Value="1"/>
+<Value Name="WLAN_AGGREGATION" Value="3"/>
+<Value Name="WLAN_SHORTGI" Value="1"/>
+<Value Name="WLAN_CONTROLBAND" Value="0"/>
+<Value Name="WLAN_CHANNELWIDTH" Value="2"/>
+<Value Name="WLAN_11NCOEXIST" Value="0"/>
+<Value Name="REPEATER_ENABLED1" Value="0"/>
+<Value Name="REPEATER_SSID1" Value=""/>
+<Value Name="REPEATER_ENABLED2" Value="0"/>
+<Value Name="REPEATER_SSID2" Value=""/>
+<Value Name="WLAN_PHY_BAND_SELECT" Value="2"/>
+<Value Name="WLAN1_PHY_BAND_SELECT" Value="1"/>
+<Value Name="WLAN1_AUTO_CHANNEL" Value="1"/>
+<Value Name="WLAN1_CHANNEL" Value="11"/>
+<Value Name="WLAN1_WEP" Value="0"/>
+<Value Name="WLAN1_WEP64_KEY1" Value="0000000000"/>
+<Value Name="WLAN1_WEP64_KEY2" Value="0000000000"/>
+<Value Name="WLAN1_WEP64_KEY3" Value="0000000000"/>
+<Value Name="WLAN1_WEP64_KEY4" Value="0000000000"/>
+<Value Name="WLAN1_WEP128_KEY1" Value="00000000000000000000000000"/>
+<Value Name="WLAN1_WEP128_KEY2" Value="00000000000000000000000000"/>
+<Value Name="WLAN1_WEP128_KEY3" Value="00000000000000000000000000"/>
+<Value Name="WLAN1_WEP128_KEY4" Value="00000000000000000000000000"/>
+<Value Name="WLAN1_WEP_DEFAULT_KEY" Value="0"/>
+<Value Name="WLAN1_WEP_KEY_TYPE" Value="0"/>
+<Value Name="WLAN1_FRAG_THRESHOLD" Value="2346"/>
+<Value Name="WLAN1_RTS_THRESHOLD" Value="2347"/>
+<Value Name="WLAN1_SUPPORTED_RATES" Value="4095"/>
+<Value Name="WLAN1_BASIC_RATES" Value="15"/>
+<Value Name="WLAN1_BEACON_INTERVAL" Value="100"/>
+<Value Name="WLAN1_PREAMBLE_TYPE" Value="0"/>
+<Value Name="WLAN1_AUTH_TYPE" Value="2"/>
+<Value Name="WLAN1_MACAC_ENABLED" Value="0"/>
+<Value Name="WLAN1_HIDDEN_SSID" Value="0"/>
+<Value Name="WLAN1_DISABLED" Value="0"/>
+<Value Name="WLAN1_RFPOWER_SCALE" Value="0"/>
+<Value Name="WLAN1_INACTIVITY_TIME" Value="30000"/>
+<Value Name="WLAN1_RATE_ADAPTIVE_ENABLED" Value="1"/>
+<Value Name="WLAN1_DTIM_PERIOD" Value="1"/>
+<Value Name="WLAN1_WLAN_MODE" Value="0"/>
+<Value Name="WLAN1_NETWORK_TYPE" Value="0"/>
+<Value Name="WLAN1_ENCRYPT" Value="6"/>
+<Value Name="WLAN1_ENABLE_SUPP_NONWPA" Value="0"/>
+<Value Name="WLAN1_SUPP_NONWPA" Value="0"/>
+<Value Name="WLAN1_WPA_AUTH" Value="2"/>
+<Value Name="WLAN1_WPA_CIPHER_SUITE" Value="3"/>
+<Value Name="WLAN1_WPA_PSK" Value="12345678"/>
+<Value Name="WLAN1_WPA_GROUP_REKEY_TIME" Value="86400"/>
+<Value Name="WLAN1_MAC_AUTH_ENABLED" Value="0"/>
+<Value Name="WLAN1_RS_IP" Value="0.0.0.0"/>
+<Value Name="WLAN1_RS_PORT" Value="1812"/>
+<Value Name="WLAN1_RS_PASSWORD" Value=""/>
+<Value Name="WLAN1_RS_MAXRETRY" Value="3"/>
+<Value Name="WLAN1_RS_INTERVAL_TIME" Value="5"/>
+<Value Name="WLAN1_ACCOUNT_RS_ENABLED" Value="0"/>
+<Value Name="WLAN1_ACCOUNT_RS_IP" Value="0.0.0.0"/>
+<Value Name="WLAN1_ACCOUNT_RS_PORT" Value="0"/>
+<Value Name="WLAN1_ACCOUNT_RS_PASSWORD" Value=""/>
+<Value Name="WLAN1_ACCOUNT_RS_UPDATE_ENABLED" Value="0"/>
+<Value Name="WLAN1_ACCOUNT_RS_UPDATE_DELAY" Value="0"/>
+<Value Name="WLAN1_ACCOUNT_RS_MAXRETRY" Value="0"/>
+<Value Name="WLAN1_ACCOUNT_RS_INTERVAL_TIME" Value="0"/>
+<Value Name="WLAN1_ENABLE_1X" Value="0"/>
+<Value Name="WLAN1_PSK_FORMAT" Value="0"/>
+<Value Name="WLAN1_WPA2_CIPHER_SUITE" Value="3"/>
+<Value Name="WLAN1_DOTIEEE80211W" Value="0"/>
+<Value Name="WLAN1_SHA256" Value="0"/>
+<Value Name="WLAN1_BLOCK_RELAY" Value="0"/>
+<Value Name="WLAN1_BLOCK_ETH2WIR" Value="0"/>
+<Value Name="WLAN1_ITF_GROUP" Value="0"/>
+<Value Name="WLAN1_BLOCK_MBSSID" Value="0"/>
+<Value Name="WLAN1_PROTECTON" Value="1"/>
+<Value Name="WLAN1_AGGREGATION" Value="1"/>
+<Value Name="WLAN1_SHORTGI" Value="1"/>
+<Value Name="WLAN1_CONTROLBAND" Value="0"/>
+<Value Name="WLAN1_CHANNELWIDTH" Value="1"/>
+<Value Name="WLAN1_11NCOEXIST" Value="0"/>
+<Value Name="WLAN1_BAND" Value="11"/>
+<Value Name="WLAN1_FIX_RATE" Value="1"/>
+<Value Name="WLAN1_BEACON_ADVERTISEMENT" Value="1"/>
+<Value Name="WLAN1_MAC_CTRL" Value="0"/>
+<Value Name="WLAN1_WSC_DISABLE" Value="0"/>
+<Value Name="WLAN1_WSC_METHOD" Value="3"/>
+<Value Name="WLAN1_WSC_AUTH" Value="34"/>
+<Value Name="WLAN1_WSC_ENC" Value="12"/>
+<Value Name="WLAN1_WSC_MANUAL_ENABLED" Value="1"/>
+<Value Name="WLAN1_WSC_UPNP_ENABLED" Value="1"/>
+<Value Name="WLAN1_WSC_REGISTRAR_ENABLED" Value="0"/>
+<Value Name="WLAN1_WSC_PSK" Value="12345678"/>
+<Value Name="WLAN1_WSC_SSID" Value=""/>
+<Value Name="WLAN1_WSC_CONFIGBYEXTREG" Value="0"/>
+<Value Name="WLAN1_VAP0_ITF_GROUP" Value="0"/>
+<Value Name="WLAN1_VAP1_ITF_GROUP" Value="0"/>
+<Value Name="WLAN1_VAP2_ITF_GROUP" Value="0"/>
+<Value Name="WLAN1_VAP3_ITF_GROUP" Value="0"/>
+<Value Name="WLAN1_QoS" Value="1"/>
+<Value Name="WLAN1_APSD_ENABLE" Value="0"/>
+<Value Name="WIFI_STA_CONTROL" Value="1"/>
+<Value Name="WIFI_MAP_CONTROLLER" Value="0"/>
+<Value Name="WIFI_MAP_CONFIGURED_BAND" Value="0"/>
+<Value Name="WIFI_MAP_DEVICE_NAME" Value="EasyMesh_Device"/>
+<Value Name="SYSLOG_LOG_LEVEL" Value="5"/>
+<Value Name="SYSLOG_DISPLAY_LEVEL" Value="5"/>
+<Value Name="SYSLOG_MODE" Value="0"/>
+<Value Name="SYSLOG_SERVER_IP" Value="0.0.0.0"/>
+<Value Name="SYSLOG_SERVER_PORT" Value="0"/>
+<Value Name="SUSER_NAME" Value="admin"/>
+<Value Name="SUSER_PASSWORD" Value="HTB{N0w_Y0u_C4n_L0g1n}"/>
+<Value Name="ADSL_TONE" Value="00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00"/>
+<Value Name="DIRECT_BRIDGE_MODE" Value="1"/>
+<Value Name="ADSL_HIGH_INP" Value="0"/>
+<Value Name="DSL_GVECTOR" Value="3"/>
+<Value Name="CWMP_PROVISIONINGCODE" Value=""/>
+<Value Name="CWMP_ACS_URL" Value="http://"/>
+<Value Name="CWMP_ACS_URL_OLD" Value="http://"/>
+<Value Name="CWMP_ACS_USERNAME" Value="username"/>
+<Value Name="CWMP_ACS_PASSWORD" Value="password"/>
+<Value Name="CWMP_INFORM_ENABLE" Value="1"/>
+<Value Name="CWMP_INFORM_INTERVAL" Value="300"/>
+<Value Name="CWMP_INFORM_TIME" Value="0"/>
+<Value Name="CWMP_CONREQ_USERNAME" Value=""/>
+<Value Name="CWMP_CONREQ_PASSWORD" Value=""/>
+<Value Name="CWMP_ACS_UPGRADESMANAGED" Value="1"/>
+<Value Name="CWMP_LAN_CONFIGPASSWD" Value=""/>
+<Value Name="CWMP_SERIALNUMBER" Value="00000001"/>
+<Value Name="CWMP_DHCP_SERVERCONF" Value="1"/>
+<Value Name="CWMP_LAN_IPIFENABLE" Value="1"/>
+<Value Name="CWMP_LAN_ETHIFENABLE" Value="1"/>
+<Value Name="CWMP_WLAN_BASICENCRY" Value="0"/>
+<Value Name="CWMP_DL_COMMANDKEY" Value=""/>
+<Value Name="CWMP_DL_QUEUE_IDX" Value="-1"/>
+<Value Name="CWMP_DL_STARTTIME" Value="0"/>
+<Value Name="CWMP_DL_COMPLETETIME" Value="0"/>
+<Value Name="CWMP_DL_FAULTCODE" Value="0"/>
+<Value Name="CWMP_INFORM_EVENTCODE" Value="1"/>
+<Value Name="CWMP_INFORM_USER_EVENTCODE" Value="0"/>
+<Value Name="CWMP_RB_COMMANDKEY" Value=""/>
+<Value Name="CWMP_ACS_PARAMETERKEY" Value=""/>
+<Value Name="CWMP_CERT_PASSWORD" Value="client"/>
+<Value Name="CWMP_FLAG" Value="48"/>
+<Value Name="CWMP_FLAG2" Value="0"/>
+<Value Name="CWMP_PARAMETERKEY" Value=""/>
+<Value Name="CWMP_SI_COMMANDKEY" Value=""/>
+<Value Name="CWMP_ACS_KICKURL" Value=""/>
+<Value Name="CWMP_ACS_DOWNLOADURL" Value=""/>
+<Value Name="CWMP_CONREQ_PORT" Value="7547"/>
+<Value Name="CWMP_CONREQ_PATH" Value="/tr069"/>
+<Value Name="TR143_UDPECHO_ENABLE" Value="0"/>
+<Value Name="TR143_UDPECHO_ITFTYPE" Value="0"/>
+<Value Name="TR143_UDPECHO_SRCIP" Value="0.0.0.0"/>
+<Value Name="TR143_UDPECHO_PORT" Value="0"/>
+<Value Name="TR143_UDPECHO_PLUS" Value="0"/>
+<Value Name="CWMP_PERSISTENT_DATA" Value=""/>
+<Value Name="CWMP_WAN_INTERFACE" Value="65535"/>
+<Value Name="CWMP_ACL_ENABLE" Value="0"/>
+<Value Name="CWMP_DELAY_RESTARTWAN_ENABLE" Value="1"/>
+<Value Name="CWMP_DELAY_RESTARTWAN_CHECK_TIME" Value="15"/>
+<Value Name="SYSLOG" Value="0"/>
+<Value Name="MAXLOGLEN" Value="51200"/>
+<Value Name="ADSLDBG" Value="0"/>
+<Value Name="MIB_ETH_MAC_CTRL" Value="0"/>
+<Value Name="MIB_WLAN_MAC_CTRL" Value="0"/>
+<Value Name="WSC_DISABLE" Value="0"/>
+<Value Name="WSC_METHOD" Value="3"/>
+<Value Name="WSC_CONFIGURED" Value="1"/>
+<Value Name="WSC_PIN" Value="12345670"/>
+<Value Name="WSC_AUTH" Value="34"/>
+<Value Name="WSC_ENC" Value="12"/>
+<Value Name="WSC_MANUAL_ENABLED" Value="1"/>
+<Value Name="WSC_UPNP_ENABLED" Value="1"/>
+<Value Name="WSC_REGISTRAR_ENABLED" Value="0"/>
+<Value Name="WSC_PSK" Value="12345678"/>
+<Value Name="WSC_SSID" Value=""/>
+<Value Name="WSC_CONFIGBYEXTREG" Value="0"/>
+<Value Name="WSC_VERSION" Value="1"/>
+<Value Name="LAN_DHCP_GATEWAY" Value="192.168.1.1"/>
+<Value Name="WLAN_VAP0_ITF_GROUP" Value="0"/>
+<Value Name="WLAN_VAP1_ITF_GROUP" Value="0"/>
+<Value Name="WLAN_VAP2_ITF_GROUP" Value="0"/>
+<Value Name="WLAN_VAP3_ITF_GROUP" Value="0"/>
+<Value Name="MIB_SAMBA_ENABLE" Value="1"/>
+<Value Name="MIB_SAMBA_NETBIOS_NAME" Value="Realtek"/>
+<Value Name="MIB_SAMBA_SERVER_STRING" Value="Realtek Samba Server"/>
+<Value Name="DHCP_SUBNET_MASK" Value="255.255.255.0"/>
+<Value Name="WLAN_APSD_ENABLE" Value="0"/>
+<Value Name="MLD_PROXY_DAEMON" Value="0"/>
+<Value Name="MLD_PROXY_EXT_ITF" Value="255"/>
+<Value Name="DNSV6_MODE" Value="0"/>
+<Value Name="DNSV61" Value="::"/>
+<Value Name="DNSV62" Value="::"/>
+<Value Name="DNSV63" Value="::"/>
+<Value Name="V6_IPF_OUT_ACTION" Value="1"/>
+<Value Name="V6_IPF_IN_ACTION" Value="1"/>
+<Value Name="V6_IPV6_ENABLE" Value="1"/>
+<Value Name="LOID" Value="user"/>
+<Value Name="LOID_PASSWD" Value=""/>
+<Value Name="LOID_OLD" Value="user"/>
+<Value Name="LOID_PASSWD_OLD" Value=""/>
+<Value Name="GPON_PLOAM_PASSWD" Value="1234567890"/>
+<Value Name="OMCI_DBGLVL" Value="0"/>
+<Value Name="OMCI_LOGFILE" Value="0"/>
+<Value Name="OMCI_PORT_TYPE" Value="1"/>
+<Value Name="DUAL_MGMT_MODE" Value="1"/>
+<Value Name="OMCI_CUSTOM_BDP" Value="136"/>
+<Value Name="OMCI_CUSTOM_RDP" Value="0"/>
+<Value Name="OMCI_CUSTOM_MCAST" Value="0"/>
+<Value Name="OMCI_CUSTOM_ME" Value="262144"/>
+<Value Name="OMCI_VENDOR_PRODUCT_CODE" Value="0"/>
+<Value Name="OMCI_FAKE_OK" Value="0"/>
+<Value Name="OMCI_VEIP_SLOT_ID" Value="255"/>
+<Value Name="OMCI_WAN_QOS_QUEUE_NUM" Value="1"/>
+<Value Name="OMCI_PSK" Value=""/>
+<Value Name="VLAN_CFG_TYPE" Value="0"/>
+<Value Name="VLAN_MANU_MODE" Value="0"/>
+<Value Name="VLAN_MANU_TAG_VID" Value="65535"/>
+<Value Name="VLAN_MANU_TAG_PRI" Value="255"/>
+<Value Name="OMCI_OLT_MODE" Value="0"/>
+<Value Name="OMCI_SW_VER1" Value="0"/>
+<Value Name="OMCI_SW_VER2" Value="0"/>
+<Value Name="OMCC_VER" Value="128"/>
+<Value Name="OMCI_TM_OPT" Value="2"/>
+<Value Name="OMCI_LOGFILE_MASK" Value="0"/>
+<Value Name="PON_CUSTOM_SDK" Value="0"/>
+<Value Name="DHCP_PORT_FILTER" Value="0"/>
+<Value Name="NTP_EXT_ITF" Value="65535"/>
+<Value Name="FIBER_MODE" Value="0"/>
+<Value Name="RTK_DEVID_MANUFACTURER" Value=""/>
+<Value Name="RTK_DEVID_OUI" Value=""/>
+<Value Name="RTK_DEVID_PRODUCTCLASS" Value=""/>
+<Value Name="RTK_DEVINFO_SPECVER" Value=""/>
+<Value Name="RTK_DEVINFO_SWVER" Value=""/>
+<Value Name="RTK_DEVINFO_HWVER" Value=""/>
+<Value Name="DEVICE_NAME" Value="RTK_GW"/>
+<Value Name="PROVINCE_TR143_SPEED_UP" Value="0"/>
+<Value Name="PROVINCE_TRAP_PPPOE_TRAFFIC" Value="0"/>
+<Value Name="QOS_DEFAULT_DSCPMARK" Value="-1"/>
+<Value Name="QOS_DEFAULT_ETHERNETPRIORITYMARK" Value="-1"/>
+<Value Name="DOT1P_VALUE_BYCF" Value="0"/>
+<Value Name="TR247_UNMATCHED_VEIP_CFG" Value="0"/>
+<Value Name="TR142_LOG_CFG" Value="0"/>
+<Value Name="TR142_EXPAND_QUEUE_ENABLE" Value="1"/>
+<Value Name="IGMP_MULTICAST_ALLOW" Value="1"/>
+<Value Name="IGMP_ROBUST_COUNT" Value="2"/>
+<Value Name="IGMP_LAST_MEMBER_QUERY_COUNT" Value="2"/>
+<Value Name="IGMP_QUERY_INTERVAL" Value="15"/>
+<Value Name="IGMP_QUERY_RESPONSE_INTERVAL" Value="100"/>
+<Value Name="IGMP_GROUTP_LEAVE_DELAY" Value="2000"/>
+<Value Name="MLD_ROBUST_COUNT" Value="2"/>
+<Value Name="MLD_LAST_MEMBER_QUERY_RESPONSE_INTERVAL" Value="2"/>
+<Value Name="MLD_QUERY_INTERVAL" Value="125"/>
+<Value Name="MLD_QUERY_RESPONSE_INTERVAL" Value="2000"/>
+<Value Name="BOSA_CUSTOMER_CONFIG_MODE" Value="0"/>
+<Value Name="BOSA_VENDOR_NAME" Value="Realtek"/>
+<Value Name="BOSA_PART_NUMBER" Value=""/>
+<Value Name="PORT_DROP_IGMP_VERSION" Value="01,01,01,01,01,01,01,01"/>
+<Value Name="STORM_UNKNOWN_UNICAST_MODE" Value="1"/>
+<Value Name="STORM_BROCAST_MODE" Value="1"/>
+<Value Name="STORM_UNKNOWN_UNICAST_RATE" Value="1496"/>
+<Value Name="STORM_BROCAST_RATE" Value="1496"/>
+<Value Name="WEB_SHOW_OMCI_CONFIGURED_WAN" Value="0"/>
+<Value Name="TR142_CUSTOMER_FLAG" Value="0"/>
+<Value Name="NTP_INTERVAL" Value="86400"/>
+<Value Name="NETDEV_MTU" Value="1500"/>
+<chain chainName="ATM_VC_TBL"> <!--index=0-->
+ <Value Name="ifIndex" Value="130816"/>
+ <Value Name="VPI" Value="0"/>
+ <Value Name="VCI" Value="0"/>
+ <Value Name="QoS" Value="0"/>
+ <Value Name="PCR" Value="0"/>
+ <Value Name="SCR" Value="0"/>
+ <Value Name="MBS" Value="0"/>
+ <Value Name="CDVT" Value="0"/>
+ <Value Name="Encap" Value="0"/>
+ <Value Name="NAPT" Value="1"/>
+ <Value Name="ChannelMode" Value="1"/>
+ <Value Name="BridgeType" Value="2"/>
+ <Value Name="pppUser" Value=""/>
+ <Value Name="pppPasswd" Value=""/>
+ <Value Name="pppAuth" Value="0"/>
+ <Value Name="pppACName" Value=""/>
+ <Value Name="pppServiceName" Value=""/>
+ <Value Name="pppConnectType" Value="0"/>
+ <Value Name="pppIdleTime" Value="0"/>
+ <Value Name="pppLcpEcho" Value="0"/>
+ <Value Name="pppLcpEchoRetry" Value="0"/>
+ <Value Name="pppDebug" Value="0"/>
+ <Value Name="enableIpQos" Value="0"/>
+ <Value Name="enableIGMP" Value="0"/>
+ <Value Name="enableMLD" Value="0"/>
+ <Value Name="ChannelAddrType" Value="1"/>
+ <Value Name="RIP" Value="0"/>
+ <Value Name="LocalIPAddr" Value="0.0.0.0"/>
+ <Value Name="RemoteIPAddr" Value="0.0.0.0"/>
+ <Value Name="DefaultGW" Value="1"/>
+ <Value Name="MTU" Value="1500"/>
+ <Value Name="ChannelStatus" Value="1"/>
+ <Value Name="SubnetMask" Value="0.0.0.0"/>
+ <Value Name="Ipunnum" Value="0"/>
+ <Value Name="DNSMode" Value="1"/>
+ <Value Name="DNSV4IPAddr1" Value="0.0.0.0"/>
+ <Value Name="DNSV4IPAddr2" Value="0.0.0.0"/>
+ <Value Name="vlan" Value="0"/>
+ <Value Name="vid" Value="0"/>
+ <Value Name="vprio" Value="0"/>
+ <Value Name="vpass" Value="0"/>
+ <Value Name="itfGroup" Value="0"/>
+ <Value Name="itfGroupNum" Value="0"/>
+ <Value Name="mVid" Value="0"/>
+ <Value Name="cpePppIfIndex" Value="0"/>
+ <Value Name="cpeIpIndex" Value="0"/>
+ <Value Name="connDisable" Value="0"/>
+ <Value Name="ConDevInstNum" Value="1"/>
+ <Value Name="ConIPInstNum" Value="1"/>
+ <Value Name="ConPPPInstNum" Value="0"/>
+ <Value Name="autoDisTime" Value="0"/>
+ <Value Name="warnDisDelay" Value="0"/>
+ <Value Name="TR143UDPEchoItf" Value="0"/>
+ <Value Name="WanName" Value=""/>
+ <Value Name="applicationtype" Value="2"/>
+ <Value Name="IpProtocol" Value="1"/>
+ <Value Name="AddrMode" Value="0"/>
+ <Value Name="Ipv6Addr" Value="::"/>
+ <Value Name="RemoteIpv6Addr" Value="::"/>
+ <Value Name="Ipv6AddrPrefixLen" Value="0"/>
+ <Value Name="Ipv6Dhcp" Value="0"/>
+ <Value Name="Ipv6DhcpRequest" Value="0"/>
+ <Value Name="RemoteIpv6EndPointAddr" Value="::"/>
+ <Value Name="dnsv6Mode" Value="0"/>
+ <Value Name="Ipv6Dns1" Value="::"/>
+ <Value Name="Ipv6Dns2" Value="::"/>
+ <Value Name="MacAddr" Value=""/>
+ <Value Name="dslite_enable" Value="0"/>
+ <Value Name="dslite_aftr_mode" Value="0"/>
+ <Value Name="dslite_aftr_addr" Value="::"/>
+ <Value Name="dslite_aftr_hostname" Value=""/>
+ <Value Name="omci_configured" Value="0"/>
+ <Value Name="omci_if_id" Value="0"/>
+</chain>
+<chain chainName="IP_PORT_FILTER_TBL">
+</chain>
+<chain chainName="MAC_FILTER_TBL">
+</chain>
+<chain chainName="PORT_FW_TBL">
+</chain>
+<chain chainName="IP_ROUTE_TBL">
+</chain>
+<chain chainName="DHCP_SERVER_OPTION_TBL">
+</chain>
+<chain chainName="DHCP_CLIENT_OPTION_TBL">
+</chain>
+<chain chainName="WLAN_AC_TBL">
+</chain>
+<chain chainName="WLAN1_AC_TBL">
+</chain>
+<chain chainName="URL_FQDN_TBL">
+</chain>
+<chain chainName="KEYWD_FILTER_TBL">
+</chain>
+<chain chainName="CWMP_PSK_TBL">
+</chain>
+<chain chainName="MAC_BASE_DHCP_TBL">
+</chain>
+<chain chainName="MIB_DDNS_TBL">
+</chain>
+<chain chainName="OMCI_DM_MCAST_ACL_TBL">
+</chain>
+<chain chainName="OMCI_DM_MCAST_PROFILE_TBL">
+</chain>
+<chain chainName="OMCI_DM_MCAST_PORT_TBL">
+</chain>
+<chain chainName="PPPOE_SESSION_TBL">
+</chain>
+<chain chainName="DOMAIN_BLOCKING_TBL">
+</chain>
+<chain chainName="RIP_TBL">
+</chain>
+<chain chainName="WLAN_MBSSIB_TBL"> <!--index=0-->
+ <Value Name="idx" Value="0"/>
+ <Value Name="encrypt" Value="6"/>
+ <Value Name="enable1X" Value="0"/>
+ <Value Name="wep" Value="0"/>
+ <Value Name="wpaAuth" Value="2"/>
+ <Value Name="wpaPSKFormat" Value="0"/>
+ <Value Name="wpaPSK" Value="12345678"/>
+ <Value Name="wpaGroupRekeyTime" Value="86400"/>
+ <Value Name="rsPort" Value="1812"/>
+ <Value Name="rsIpAddr" Value="0.0.0.0"/>
+ <Value Name="rsPassword" Value=""/>
+ <Value Name="rs2Port" Value="1812"/>
+ <Value Name="rs2IpAddr" Value="0.0.0.0"/>
+ <Value Name="rs2Password" Value=""/>
+ <Value Name="wlanDisabled" Value="0"/>
+ <Value Name="ssid" Value=""/>
+ <Value Name="wlanMode" Value="0"/>
+ <Value Name="authType" Value="2"/>
+ <Value Name="cwmp_WLAN_BasicEncry" Value="0"/>
+ <Value Name="unicastCipher" Value="3"/>
+ <Value Name="wpa2UnicastCipher" Value="3"/>
+ <Value Name="bcnAdvtisement" Value="1"/>
+ <Value Name="hidessid" Value="0"/>
+ <Value Name="userIsolation" Value="0"/>
+ <Value Name="itfGroup" Value="0"/>
+ <Value Name="wepKeyType" Value="0"/>
+ <Value Name="wepDefaultKey" Value="0"/>
+ <Value Name="wep64Key1" Value="0000000000"/>
+ <Value Name="wep64Key2" Value="0000000000"/>
+ <Value Name="wep64Key3" Value="0000000000"/>
+ <Value Name="wep64Key4" Value="0000000000"/>
+ <Value Name="wep128Key1" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key2" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key3" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key4" Value="00000000000000000000000000"/>
+ <Value Name="wmmEnabled" Value="1"/>
+ <Value Name="rateAdaptiveEnabled" Value="1"/>
+ <Value Name="wlanBand" Value="76"/>
+ <Value Name="fixedTxRate" Value="1"/>
+ <Value Name="wsc_disabled" Value="0"/>
+ <Value Name="wsc_configured" Value="1"/>
+ <Value Name="wsc_upnp_enabled" Value="1"/>
+ <Value Name="wsc_auth" Value="34"/>
+ <Value Name="wsc_enc" Value="12"/>
+ <Value Name="wscPsk" Value="12345678"/>
+ <Value Name="dotIEEE80211W" Value="0"/>
+ <Value Name="sha256" Value="0"/>
+ <Value Name="rm_activated" Value="1"/>
+ <Value Name="BssTransEnable" Value="1"/>
+ <Value Name="txbf" Value="1"/>
+ <Value Name="txbf_mu" Value="1"/>
+ <Value Name="mc2u_disable" Value="0"/>
+ <Value Name="multiap_bss_type" Value="0"/>
+</chain>
+<chain chainName="WLAN_MBSSIB_TBL"> <!--index=1-->
+ <Value Name="idx" Value="1"/>
+ <Value Name="encrypt" Value="0"/>
+ <Value Name="enable1X" Value="0"/>
+ <Value Name="wep" Value="0"/>
+ <Value Name="wpaAuth" Value="2"/>
+ <Value Name="wpaPSKFormat" Value="0"/>
+ <Value Name="wpaPSK" Value=""/>
+ <Value Name="wpaGroupRekeyTime" Value="86400"/>
+ <Value Name="rsPort" Value="1812"/>
+ <Value Name="rsIpAddr" Value="0.0.0.0"/>
+ <Value Name="rsPassword" Value=""/>
+ <Value Name="rs2Port" Value="1812"/>
+ <Value Name="rs2IpAddr" Value="0.0.0.0"/>
+ <Value Name="rs2Password" Value=""/>
+ <Value Name="wlanDisabled" Value="1"/>
+ <Value Name="ssid" Value="CTC-1111"/>
+ <Value Name="wlanMode" Value="0"/>
+ <Value Name="authType" Value="2"/>
+ <Value Name="cwmp_WLAN_BasicEncry" Value="0"/>
+ <Value Name="unicastCipher" Value="1"/>
+ <Value Name="wpa2UnicastCipher" Value="2"/>
+ <Value Name="bcnAdvtisement" Value="1"/>
+ <Value Name="hidessid" Value="0"/>
+ <Value Name="userIsolation" Value="0"/>
+ <Value Name="itfGroup" Value="0"/>
+ <Value Name="wepKeyType" Value="0"/>
+ <Value Name="wepDefaultKey" Value="0"/>
+ <Value Name="wep64Key1" Value="0000000000"/>
+ <Value Name="wep64Key2" Value="0000000000"/>
+ <Value Name="wep64Key3" Value="0000000000"/>
+ <Value Name="wep64Key4" Value="0000000000"/>
+ <Value Name="wep128Key1" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key2" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key3" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key4" Value="00000000000000000000000000"/>
+ <Value Name="wmmEnabled" Value="1"/>
+ <Value Name="rateAdaptiveEnabled" Value="1"/>
+ <Value Name="wlanBand" Value="76"/>
+ <Value Name="fixedTxRate" Value="1"/>
+ <Value Name="wsc_disabled" Value="1"/>
+ <Value Name="wsc_configured" Value="0"/>
+ <Value Name="wsc_upnp_enabled" Value="0"/>
+ <Value Name="wsc_auth" Value="1"/>
+ <Value Name="wsc_enc" Value="1"/>
+ <Value Name="wscPsk" Value=""/>
+ <Value Name="dotIEEE80211W" Value="0"/>
+ <Value Name="sha256" Value="0"/>
+ <Value Name="rm_activated" Value="0"/>
+ <Value Name="BssTransEnable" Value="0"/>
+ <Value Name="txbf" Value="1"/>
+ <Value Name="txbf_mu" Value="0"/>
+ <Value Name="mc2u_disable" Value="0"/>
+ <Value Name="multiap_bss_type" Value="0"/>
+</chain>
+<chain chainName="WLAN_MBSSIB_TBL"> <!--index=2-->
+ <Value Name="idx" Value="2"/>
+ <Value Name="encrypt" Value="0"/>
+ <Value Name="enable1X" Value="0"/>
+ <Value Name="wep" Value="0"/>
+ <Value Name="wpaAuth" Value="2"/>
+ <Value Name="wpaPSKFormat" Value="0"/>
+ <Value Name="wpaPSK" Value=""/>
+ <Value Name="wpaGroupRekeyTime" Value="86400"/>
+ <Value Name="rsPort" Value="1812"/>
+ <Value Name="rsIpAddr" Value="0.0.0.0"/>
+ <Value Name="rsPassword" Value=""/>
+ <Value Name="rs2Port" Value="1812"/>
+ <Value Name="rs2IpAddr" Value="0.0.0.0"/>
+ <Value Name="rs2Password" Value=""/>
+ <Value Name="wlanDisabled" Value="1"/>
+ <Value Name="ssid" Value="CTC-2222"/>
+ <Value Name="wlanMode" Value="0"/>
+ <Value Name="authType" Value="2"/>
+ <Value Name="cwmp_WLAN_BasicEncry" Value="0"/>
+ <Value Name="unicastCipher" Value="1"/>
+ <Value Name="wpa2UnicastCipher" Value="2"/>
+ <Value Name="bcnAdvtisement" Value="1"/>
+ <Value Name="hidessid" Value="0"/>
+ <Value Name="userIsolation" Value="0"/>
+ <Value Name="itfGroup" Value="0"/>
+ <Value Name="wepKeyType" Value="0"/>
+ <Value Name="wepDefaultKey" Value="0"/>
+ <Value Name="wep64Key1" Value="0000000000"/>
+ <Value Name="wep64Key2" Value="0000000000"/>
+ <Value Name="wep64Key3" Value="0000000000"/>
+ <Value Name="wep64Key4" Value="0000000000"/>
+ <Value Name="wep128Key1" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key2" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key3" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key4" Value="00000000000000000000000000"/>
+ <Value Name="wmmEnabled" Value="1"/>
+ <Value Name="rateAdaptiveEnabled" Value="1"/>
+ <Value Name="wlanBand" Value="76"/>
+ <Value Name="fixedTxRate" Value="1"/>
+ <Value Name="wsc_disabled" Value="1"/>
+ <Value Name="wsc_configured" Value="0"/>
+ <Value Name="wsc_upnp_enabled" Value="0"/>
+ <Value Name="wsc_auth" Value="1"/>
+ <Value Name="wsc_enc" Value="1"/>
+ <Value Name="wscPsk" Value=""/>
+ <Value Name="dotIEEE80211W" Value="0"/>
+ <Value Name="sha256" Value="0"/>
+ <Value Name="rm_activated" Value="0"/>
+ <Value Name="BssTransEnable" Value="0"/>
+ <Value Name="txbf" Value="1"/>
+ <Value Name="txbf_mu" Value="0"/>
+ <Value Name="mc2u_disable" Value="0"/>
+ <Value Name="multiap_bss_type" Value="0"/>
+</chain>
+<chain chainName="WLAN_MBSSIB_TBL"> <!--index=3-->
+ <Value Name="idx" Value="3"/>
+ <Value Name="encrypt" Value="0"/>
+ <Value Name="enable1X" Value="0"/>
+ <Value Name="wep" Value="0"/>
+ <Value Name="wpaAuth" Value="2"/>
+ <Value Name="wpaPSKFormat" Value="0"/>
+ <Value Name="wpaPSK" Value=""/>
+ <Value Name="wpaGroupRekeyTime" Value="86400"/>
+ <Value Name="rsPort" Value="1812"/>
+ <Value Name="rsIpAddr" Value="0.0.0.0"/>
+ <Value Name="rsPassword" Value=""/>
+ <Value Name="rs2Port" Value="1812"/>
+ <Value Name="rs2IpAddr" Value="0.0.0.0"/>
+ <Value Name="rs2Password" Value=""/>
+ <Value Name="wlanDisabled" Value="1"/>
+ <Value Name="ssid" Value="CTC-3333"/>
+ <Value Name="wlanMode" Value="0"/>
+ <Value Name="authType" Value="2"/>
+ <Value Name="cwmp_WLAN_BasicEncry" Value="0"/>
+ <Value Name="unicastCipher" Value="1"/>
+ <Value Name="wpa2UnicastCipher" Value="2"/>
+ <Value Name="bcnAdvtisement" Value="1"/>
+ <Value Name="hidessid" Value="0"/>
+ <Value Name="userIsolation" Value="0"/>
+ <Value Name="itfGroup" Value="0"/>
+ <Value Name="wepKeyType" Value="0"/>
+ <Value Name="wepDefaultKey" Value="0"/>
+ <Value Name="wep64Key1" Value="0000000000"/>
+ <Value Name="wep64Key2" Value="0000000000"/>
+ <Value Name="wep64Key3" Value="0000000000"/>
+ <Value Name="wep64Key4" Value="0000000000"/>
+ <Value Name="wep128Key1" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key2" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key3" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key4" Value="00000000000000000000000000"/>
+ <Value Name="wmmEnabled" Value="1"/>
+ <Value Name="rateAdaptiveEnabled" Value="1"/>
+ <Value Name="wlanBand" Value="76"/>
+ <Value Name="fixedTxRate" Value="1"/>
+ <Value Name="wsc_disabled" Value="1"/>
+ <Value Name="wsc_configured" Value="0"/>
+ <Value Name="wsc_upnp_enabled" Value="0"/>
+ <Value Name="wsc_auth" Value="1"/>
+ <Value Name="wsc_enc" Value="1"/>
+ <Value Name="wscPsk" Value=""/>
+ <Value Name="dotIEEE80211W" Value="0"/>
+ <Value Name="sha256" Value="0"/>
+ <Value Name="rm_activated" Value="0"/>
+ <Value Name="BssTransEnable" Value="0"/>
+ <Value Name="txbf" Value="1"/>
+ <Value Name="txbf_mu" Value="0"/>
+ <Value Name="mc2u_disable" Value="0"/>
+ <Value Name="multiap_bss_type" Value="0"/>
+</chain>
+<chain chainName="WLAN_MBSSIB_TBL"> <!--index=4-->
+ <Value Name="idx" Value="4"/>
+ <Value Name="encrypt" Value="0"/>
+ <Value Name="enable1X" Value="0"/>
+ <Value Name="wep" Value="0"/>
+ <Value Name="wpaAuth" Value="2"/>
+ <Value Name="wpaPSKFormat" Value="0"/>
+ <Value Name="wpaPSK" Value=""/>
+ <Value Name="wpaGroupRekeyTime" Value="86400"/>
+ <Value Name="rsPort" Value="1812"/>
+ <Value Name="rsIpAddr" Value="0.0.0.0"/>
+ <Value Name="rsPassword" Value=""/>
+ <Value Name="rs2Port" Value="1812"/>
+ <Value Name="rs2IpAddr" Value="0.0.0.0"/>
+ <Value Name="rs2Password" Value=""/>
+ <Value Name="wlanDisabled" Value="1"/>
+ <Value Name="ssid" Value="CTC-4444"/>
+ <Value Name="wlanMode" Value="0"/>
+ <Value Name="authType" Value="2"/>
+ <Value Name="cwmp_WLAN_BasicEncry" Value="0"/>
+ <Value Name="unicastCipher" Value="1"/>
+ <Value Name="wpa2UnicastCipher" Value="2"/>
+ <Value Name="bcnAdvtisement" Value="1"/>
+ <Value Name="hidessid" Value="0"/>
+ <Value Name="userIsolation" Value="0"/>
+ <Value Name="itfGroup" Value="0"/>
+ <Value Name="wepKeyType" Value="0"/>
+ <Value Name="wepDefaultKey" Value="0"/>
+ <Value Name="wep64Key1" Value="0000000000"/>
+ <Value Name="wep64Key2" Value="0000000000"/>
+ <Value Name="wep64Key3" Value="0000000000"/>
+ <Value Name="wep64Key4" Value="0000000000"/>
+ <Value Name="wep128Key1" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key2" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key3" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key4" Value="00000000000000000000000000"/>
+ <Value Name="wmmEnabled" Value="1"/>
+ <Value Name="rateAdaptiveEnabled" Value="1"/>
+ <Value Name="wlanBand" Value="76"/>
+ <Value Name="fixedTxRate" Value="1"/>
+ <Value Name="wsc_disabled" Value="1"/>
+ <Value Name="wsc_configured" Value="0"/>
+ <Value Name="wsc_upnp_enabled" Value="0"/>
+ <Value Name="wsc_auth" Value="1"/>
+ <Value Name="wsc_enc" Value="1"/>
+ <Value Name="wscPsk" Value=""/>
+ <Value Name="dotIEEE80211W" Value="0"/>
+ <Value Name="sha256" Value="0"/>
+ <Value Name="rm_activated" Value="0"/>
+ <Value Name="BssTransEnable" Value="0"/>
+ <Value Name="txbf" Value="1"/>
+ <Value Name="txbf_mu" Value="0"/>
+ <Value Name="mc2u_disable" Value="0"/>
+ <Value Name="multiap_bss_type" Value="0"/>
+</chain>
+<chain chainName="WLAN_MBSSIB_TBL"> <!--index=5-->
+ <Value Name="idx" Value="5"/>
+ <Value Name="encrypt" Value="0"/>
+ <Value Name="enable1X" Value="0"/>
+ <Value Name="wep" Value="0"/>
+ <Value Name="wpaAuth" Value="2"/>
+ <Value Name="wpaPSKFormat" Value="0"/>
+ <Value Name="wpaPSK" Value=""/>
+ <Value Name="wpaGroupRekeyTime" Value="86400"/>
+ <Value Name="rsPort" Value="1812"/>
+ <Value Name="rsIpAddr" Value="0.0.0.0"/>
+ <Value Name="rsPassword" Value=""/>
+ <Value Name="rs2Port" Value="1812"/>
+ <Value Name="rs2IpAddr" Value="0.0.0.0"/>
+ <Value Name="rs2Password" Value=""/>
+ <Value Name="wlanDisabled" Value="1"/>
+ <Value Name="ssid" Value=""/>
+ <Value Name="wlanMode" Value="0"/>
+ <Value Name="authType" Value="2"/>
+ <Value Name="cwmp_WLAN_BasicEncry" Value="0"/>
+ <Value Name="unicastCipher" Value="1"/>
+ <Value Name="wpa2UnicastCipher" Value="2"/>
+ <Value Name="bcnAdvtisement" Value="1"/>
+ <Value Name="hidessid" Value="0"/>
+ <Value Name="userIsolation" Value="0"/>
+ <Value Name="itfGroup" Value="0"/>
+ <Value Name="wepKeyType" Value="0"/>
+ <Value Name="wepDefaultKey" Value="0"/>
+ <Value Name="wep64Key1" Value="0000000000"/>
+ <Value Name="wep64Key2" Value="0000000000"/>
+ <Value Name="wep64Key3" Value="0000000000"/>
+ <Value Name="wep64Key4" Value="0000000000"/>
+ <Value Name="wep128Key1" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key2" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key3" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key4" Value="00000000000000000000000000"/>
+ <Value Name="wmmEnabled" Value="1"/>
+ <Value Name="rateAdaptiveEnabled" Value="1"/>
+ <Value Name="wlanBand" Value="76"/>
+ <Value Name="fixedTxRate" Value="1"/>
+ <Value Name="wsc_disabled" Value="1"/>
+ <Value Name="wsc_configured" Value="0"/>
+ <Value Name="wsc_upnp_enabled" Value="0"/>
+ <Value Name="wsc_auth" Value="1"/>
+ <Value Name="wsc_enc" Value="1"/>
+ <Value Name="wscPsk" Value=""/>
+ <Value Name="dotIEEE80211W" Value="0"/>
+ <Value Name="sha256" Value="0"/>
+ <Value Name="rm_activated" Value="0"/>
+ <Value Name="BssTransEnable" Value="0"/>
+ <Value Name="txbf" Value="1"/>
+ <Value Name="txbf_mu" Value="0"/>
+ <Value Name="mc2u_disable" Value="0"/>
+ <Value Name="multiap_bss_type" Value="0"/>
+</chain>
+<chain chainName="WLAN1_MBSSIB_TBL"> <!--index=0-->
+ <Value Name="idx" Value="6"/>
+ <Value Name="encrypt" Value="6"/>
+ <Value Name="enable1X" Value="0"/>
+ <Value Name="wep" Value="0"/>
+ <Value Name="wpaAuth" Value="2"/>
+ <Value Name="wpaPSKFormat" Value="0"/>
+ <Value Name="wpaPSK" Value="12345678"/>
+ <Value Name="wpaGroupRekeyTime" Value="86400"/>
+ <Value Name="rsPort" Value="1812"/>
+ <Value Name="rsIpAddr" Value="0.0.0.0"/>
+ <Value Name="rsPassword" Value=""/>
+ <Value Name="rs2Port" Value="1812"/>
+ <Value Name="rs2IpAddr" Value="0.0.0.0"/>
+ <Value Name="rs2Password" Value=""/>
+ <Value Name="wlanDisabled" Value="0"/>
+ <Value Name="ssid" Value=""/>
+ <Value Name="wlanMode" Value="0"/>
+ <Value Name="authType" Value="2"/>
+ <Value Name="cwmp_WLAN_BasicEncry" Value="0"/>
+ <Value Name="unicastCipher" Value="3"/>
+ <Value Name="wpa2UnicastCipher" Value="3"/>
+ <Value Name="bcnAdvtisement" Value="1"/>
+ <Value Name="hidessid" Value="0"/>
+ <Value Name="userIsolation" Value="0"/>
+ <Value Name="itfGroup" Value="0"/>
+ <Value Name="wepKeyType" Value="0"/>
+ <Value Name="wepDefaultKey" Value="0"/>
+ <Value Name="wep64Key1" Value="0000000000"/>
+ <Value Name="wep64Key2" Value="0000000000"/>
+ <Value Name="wep64Key3" Value="0000000000"/>
+ <Value Name="wep64Key4" Value="0000000000"/>
+ <Value Name="wep128Key1" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key2" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key3" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key4" Value="00000000000000000000000000"/>
+ <Value Name="wmmEnabled" Value="1"/>
+ <Value Name="rateAdaptiveEnabled" Value="1"/>
+ <Value Name="wlanBand" Value="11"/>
+ <Value Name="fixedTxRate" Value="1"/>
+ <Value Name="wsc_disabled" Value="0"/>
+ <Value Name="wsc_configured" Value="1"/>
+ <Value Name="wsc_upnp_enabled" Value="1"/>
+ <Value Name="wsc_auth" Value="34"/>
+ <Value Name="wsc_enc" Value="12"/>
+ <Value Name="wscPsk" Value="12345678"/>
+ <Value Name="dotIEEE80211W" Value="0"/>
+ <Value Name="sha256" Value="0"/>
+ <Value Name="rm_activated" Value="1"/>
+ <Value Name="BssTransEnable" Value="1"/>
+ <Value Name="txbf" Value="1"/>
+ <Value Name="txbf_mu" Value="1"/>
+ <Value Name="mc2u_disable" Value="0"/>
+ <Value Name="multiap_bss_type" Value="0"/>
+</chain>
+<chain chainName="WLAN1_MBSSIB_TBL"> <!--index=1-->
+ <Value Name="idx" Value="7"/>
+ <Value Name="encrypt" Value="0"/>
+ <Value Name="enable1X" Value="0"/>
+ <Value Name="wep" Value="0"/>
+ <Value Name="wpaAuth" Value="2"/>
+ <Value Name="wpaPSKFormat" Value="0"/>
+ <Value Name="wpaPSK" Value=""/>
+ <Value Name="wpaGroupRekeyTime" Value="86400"/>
+ <Value Name="rsPort" Value="1812"/>
+ <Value Name="rsIpAddr" Value="0.0.0.0"/>
+ <Value Name="rsPassword" Value=""/>
+ <Value Name="rs2Port" Value="1812"/>
+ <Value Name="rs2IpAddr" Value="0.0.0.0"/>
+ <Value Name="rs2Password" Value=""/>
+ <Value Name="wlanDisabled" Value="1"/>
+ <Value Name="ssid" Value="AP-1"/>
+ <Value Name="wlanMode" Value="0"/>
+ <Value Name="authType" Value="2"/>
+ <Value Name="cwmp_WLAN_BasicEncry" Value="0"/>
+ <Value Name="unicastCipher" Value="1"/>
+ <Value Name="wpa2UnicastCipher" Value="2"/>
+ <Value Name="bcnAdvtisement" Value="1"/>
+ <Value Name="hidessid" Value="0"/>
+ <Value Name="userIsolation" Value="0"/>
+ <Value Name="itfGroup" Value="0"/>
+ <Value Name="wepKeyType" Value="0"/>
+ <Value Name="wepDefaultKey" Value="0"/>
+ <Value Name="wep64Key1" Value="0000000000"/>
+ <Value Name="wep64Key2" Value="0000000000"/>
+ <Value Name="wep64Key3" Value="0000000000"/>
+ <Value Name="wep64Key4" Value="0000000000"/>
+ <Value Name="wep128Key1" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key2" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key3" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key4" Value="00000000000000000000000000"/>
+ <Value Name="wmmEnabled" Value="1"/>
+ <Value Name="rateAdaptiveEnabled" Value="1"/>
+ <Value Name="wlanBand" Value="11"/>
+ <Value Name="fixedTxRate" Value="1"/>
+ <Value Name="wsc_disabled" Value="1"/>
+ <Value Name="wsc_configured" Value="0"/>
+ <Value Name="wsc_upnp_enabled" Value="0"/>
+ <Value Name="wsc_auth" Value="1"/>
+ <Value Name="wsc_enc" Value="1"/>
+ <Value Name="wscPsk" Value=""/>
+ <Value Name="dotIEEE80211W" Value="0"/>
+ <Value Name="sha256" Value="0"/>
+ <Value Name="rm_activated" Value="0"/>
+ <Value Name="BssTransEnable" Value="0"/>
+ <Value Name="txbf" Value="1"/>
+ <Value Name="txbf_mu" Value="0"/>
+ <Value Name="mc2u_disable" Value="0"/>
+ <Value Name="multiap_bss_type" Value="0"/>
+</chain>
+<chain chainName="WLAN1_MBSSIB_TBL"> <!--index=2-->
+ <Value Name="idx" Value="8"/>
+ <Value Name="encrypt" Value="0"/>
+ <Value Name="enable1X" Value="0"/>
+ <Value Name="wep" Value="0"/>
+ <Value Name="wpaAuth" Value="2"/>
+ <Value Name="wpaPSKFormat" Value="0"/>
+ <Value Name="wpaPSK" Value=""/>
+ <Value Name="wpaGroupRekeyTime" Value="86400"/>
+ <Value Name="rsPort" Value="1812"/>
+ <Value Name="rsIpAddr" Value="0.0.0.0"/>
+ <Value Name="rsPassword" Value=""/>
+ <Value Name="rs2Port" Value="1812"/>
+ <Value Name="rs2IpAddr" Value="0.0.0.0"/>
+ <Value Name="rs2Password" Value=""/>
+ <Value Name="wlanDisabled" Value="1"/>
+ <Value Name="ssid" Value="AP-2"/>
+ <Value Name="wlanMode" Value="0"/>
+ <Value Name="authType" Value="2"/>
+ <Value Name="cwmp_WLAN_BasicEncry" Value="0"/>
+ <Value Name="unicastCipher" Value="1"/>
+ <Value Name="wpa2UnicastCipher" Value="2"/>
+ <Value Name="bcnAdvtisement" Value="1"/>
+ <Value Name="hidessid" Value="0"/>
+ <Value Name="userIsolation" Value="0"/>
+ <Value Name="itfGroup" Value="0"/>
+ <Value Name="wepKeyType" Value="0"/>
+ <Value Name="wepDefaultKey" Value="0"/>
+ <Value Name="wep64Key1" Value="0000000000"/>
+ <Value Name="wep64Key2" Value="0000000000"/>
+ <Value Name="wep64Key3" Value="0000000000"/>
+ <Value Name="wep64Key4" Value="0000000000"/>
+ <Value Name="wep128Key1" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key2" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key3" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key4" Value="00000000000000000000000000"/>
+ <Value Name="wmmEnabled" Value="1"/>
+ <Value Name="rateAdaptiveEnabled" Value="1"/>
+ <Value Name="wlanBand" Value="11"/>
+ <Value Name="fixedTxRate" Value="1"/>
+ <Value Name="wsc_disabled" Value="1"/>
+ <Value Name="wsc_configured" Value="0"/>
+ <Value Name="wsc_upnp_enabled" Value="0"/>
+ <Value Name="wsc_auth" Value="1"/>
+ <Value Name="wsc_enc" Value="1"/>
+ <Value Name="wscPsk" Value=""/>
+ <Value Name="dotIEEE80211W" Value="0"/>
+ <Value Name="sha256" Value="0"/>
+ <Value Name="rm_activated" Value="0"/>
+ <Value Name="BssTransEnable" Value="0"/>
+ <Value Name="txbf" Value="1"/>
+ <Value Name="txbf_mu" Value="0"/>
+ <Value Name="mc2u_disable" Value="0"/>
+ <Value Name="multiap_bss_type" Value="0"/>
+</chain>
+<chain chainName="WLAN1_MBSSIB_TBL"> <!--index=3-->
+ <Value Name="idx" Value="9"/>
+ <Value Name="encrypt" Value="0"/>
+ <Value Name="enable1X" Value="0"/>
+ <Value Name="wep" Value="0"/>
+ <Value Name="wpaAuth" Value="2"/>
+ <Value Name="wpaPSKFormat" Value="0"/>
+ <Value Name="wpaPSK" Value=""/>
+ <Value Name="wpaGroupRekeyTime" Value="86400"/>
+ <Value Name="rsPort" Value="1812"/>
+ <Value Name="rsIpAddr" Value="0.0.0.0"/>
+ <Value Name="rsPassword" Value=""/>
+ <Value Name="rs2Port" Value="1812"/>
+ <Value Name="rs2IpAddr" Value="0.0.0.0"/>
+ <Value Name="rs2Password" Value=""/>
+ <Value Name="wlanDisabled" Value="1"/>
+ <Value Name="ssid" Value="AP-3"/>
+ <Value Name="wlanMode" Value="0"/>
+ <Value Name="authType" Value="2"/>
+ <Value Name="cwmp_WLAN_BasicEncry" Value="0"/>
+ <Value Name="unicastCipher" Value="1"/>
+ <Value Name="wpa2UnicastCipher" Value="2"/>
+ <Value Name="bcnAdvtisement" Value="1"/>
+ <Value Name="hidessid" Value="0"/>
+ <Value Name="userIsolation" Value="0"/>
+ <Value Name="itfGroup" Value="0"/>
+ <Value Name="wepKeyType" Value="0"/>
+ <Value Name="wepDefaultKey" Value="0"/>
+ <Value Name="wep64Key1" Value="0000000000"/>
+ <Value Name="wep64Key2" Value="0000000000"/>
+ <Value Name="wep64Key3" Value="0000000000"/>
+ <Value Name="wep64Key4" Value="0000000000"/>
+ <Value Name="wep128Key1" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key2" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key3" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key4" Value="00000000000000000000000000"/>
+ <Value Name="wmmEnabled" Value="1"/>
+ <Value Name="rateAdaptiveEnabled" Value="1"/>
+ <Value Name="wlanBand" Value="11"/>
+ <Value Name="fixedTxRate" Value="1"/>
+ <Value Name="wsc_disabled" Value="1"/>
+ <Value Name="wsc_configured" Value="0"/>
+ <Value Name="wsc_upnp_enabled" Value="0"/>
+ <Value Name="wsc_auth" Value="1"/>
+ <Value Name="wsc_enc" Value="1"/>
+ <Value Name="wscPsk" Value=""/>
+ <Value Name="dotIEEE80211W" Value="0"/>
+ <Value Name="sha256" Value="0"/>
+ <Value Name="rm_activated" Value="0"/>
+ <Value Name="BssTransEnable" Value="0"/>
+ <Value Name="txbf" Value="1"/>
+ <Value Name="txbf_mu" Value="0"/>
+ <Value Name="mc2u_disable" Value="0"/>
+ <Value Name="multiap_bss_type" Value="0"/>
+</chain>
+<chain chainName="WLAN1_MBSSIB_TBL"> <!--index=4-->
+ <Value Name="idx" Value="10"/>
+ <Value Name="encrypt" Value="0"/>
+ <Value Name="enable1X" Value="0"/>
+ <Value Name="wep" Value="0"/>
+ <Value Name="wpaAuth" Value="2"/>
+ <Value Name="wpaPSKFormat" Value="0"/>
+ <Value Name="wpaPSK" Value=""/>
+ <Value Name="wpaGroupRekeyTime" Value="86400"/>
+ <Value Name="rsPort" Value="1812"/>
+ <Value Name="rsIpAddr" Value="0.0.0.0"/>
+ <Value Name="rsPassword" Value=""/>
+ <Value Name="rs2Port" Value="1812"/>
+ <Value Name="rs2IpAddr" Value="0.0.0.0"/>
+ <Value Name="rs2Password" Value=""/>
+ <Value Name="wlanDisabled" Value="1"/>
+ <Value Name="ssid" Value="AP-4"/>
+ <Value Name="wlanMode" Value="0"/>
+ <Value Name="authType" Value="2"/>
+ <Value Name="cwmp_WLAN_BasicEncry" Value="0"/>
+ <Value Name="unicastCipher" Value="1"/>
+ <Value Name="wpa2UnicastCipher" Value="2"/>
+ <Value Name="bcnAdvtisement" Value="1"/>
+ <Value Name="hidessid" Value="0"/>
+ <Value Name="userIsolation" Value="0"/>
+ <Value Name="itfGroup" Value="0"/>
+ <Value Name="wepKeyType" Value="0"/>
+ <Value Name="wepDefaultKey" Value="0"/>
+ <Value Name="wep64Key1" Value="0000000000"/>
+ <Value Name="wep64Key2" Value="0000000000"/>
+ <Value Name="wep64Key3" Value="0000000000"/>
+ <Value Name="wep64Key4" Value="0000000000"/>
+ <Value Name="wep128Key1" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key2" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key3" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key4" Value="00000000000000000000000000"/>
+ <Value Name="wmmEnabled" Value="1"/>
+ <Value Name="rateAdaptiveEnabled" Value="1"/>
+ <Value Name="wlanBand" Value="11"/>
+ <Value Name="fixedTxRate" Value="1"/>
+ <Value Name="wsc_disabled" Value="1"/>
+ <Value Name="wsc_configured" Value="0"/>
+ <Value Name="wsc_upnp_enabled" Value="0"/>
+ <Value Name="wsc_auth" Value="1"/>
+ <Value Name="wsc_enc" Value="1"/>
+ <Value Name="wscPsk" Value=""/>
+ <Value Name="dotIEEE80211W" Value="0"/>
+ <Value Name="sha256" Value="0"/>
+ <Value Name="rm_activated" Value="0"/>
+ <Value Name="BssTransEnable" Value="0"/>
+ <Value Name="txbf" Value="1"/>
+ <Value Name="txbf_mu" Value="0"/>
+ <Value Name="mc2u_disable" Value="0"/>
+ <Value Name="multiap_bss_type" Value="0"/>
+</chain>
+<chain chainName="WLAN1_MBSSIB_TBL"> <!--index=5-->
+ <Value Name="idx" Value="11"/>
+ <Value Name="encrypt" Value="0"/>
+ <Value Name="enable1X" Value="0"/>
+ <Value Name="wep" Value="0"/>
+ <Value Name="wpaAuth" Value="2"/>
+ <Value Name="wpaPSKFormat" Value="0"/>
+ <Value Name="wpaPSK" Value=""/>
+ <Value Name="wpaGroupRekeyTime" Value="86400"/>
+ <Value Name="rsPort" Value="1812"/>
+ <Value Name="rsIpAddr" Value="0.0.0.0"/>
+ <Value Name="rsPassword" Value=""/>
+ <Value Name="rs2Port" Value="1812"/>
+ <Value Name="rs2IpAddr" Value="0.0.0.0"/>
+ <Value Name="rs2Password" Value=""/>
+ <Value Name="wlanDisabled" Value="1"/>
+ <Value Name="ssid" Value=""/>
+ <Value Name="wlanMode" Value="0"/>
+ <Value Name="authType" Value="2"/>
+ <Value Name="cwmp_WLAN_BasicEncry" Value="0"/>
+ <Value Name="unicastCipher" Value="1"/>
+ <Value Name="wpa2UnicastCipher" Value="2"/>
+ <Value Name="bcnAdvtisement" Value="1"/>
+ <Value Name="hidessid" Value="0"/>
+ <Value Name="userIsolation" Value="0"/>
+ <Value Name="itfGroup" Value="0"/>
+ <Value Name="wepKeyType" Value="0"/>
+ <Value Name="wepDefaultKey" Value="0"/>
+ <Value Name="wep64Key1" Value="0000000000"/>
+ <Value Name="wep64Key2" Value="0000000000"/>
+ <Value Name="wep64Key3" Value="0000000000"/>
+ <Value Name="wep64Key4" Value="0000000000"/>
+ <Value Name="wep128Key1" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key2" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key3" Value="00000000000000000000000000"/>
+ <Value Name="wep128Key4" Value="00000000000000000000000000"/>
+ <Value Name="wmmEnabled" Value="1"/>
+ <Value Name="rateAdaptiveEnabled" Value="1"/>
+ <Value Name="wlanBand" Value="11"/>
+ <Value Name="fixedTxRate" Value="1"/>
+ <Value Name="wsc_disabled" Value="1"/>
+ <Value Name="wsc_configured" Value="0"/>
+ <Value Name="wsc_upnp_enabled" Value="0"/>
+ <Value Name="wsc_auth" Value="1"/>
+ <Value Name="wsc_enc" Value="1"/>
+ <Value Name="wscPsk" Value=""/>
+ <Value Name="dotIEEE80211W" Value="0"/>
+ <Value Name="sha256" Value="0"/>
+ <Value Name="rm_activated" Value="0"/>
+ <Value Name="BssTransEnable" Value="0"/>
+ <Value Name="txbf" Value="1"/>
+ <Value Name="txbf_mu" Value="0"/>
+ <Value Name="mc2u_disable" Value="0"/>
+ <Value Name="multiap_bss_type" Value="0"/>
+</chain>
+<chain chainName="DHCPS_SERVING_POOL_TBL">
+</chain>
+<chain chainName="DHCP_RESERVED_IPADDR_TBL">
+</chain>
+<chain chainName="DHCPV6S_NAME_SERVER_TBL">
+</chain>
+<chain chainName="DHCPV6S_DOMAIN_SEARCH_TBL">
+</chain>
+<chain chainName="DHCPV6S_NTP_SERVER_TBL">
+</chain>
+<chain chainName="DHCPV6S_MAC_BINDING_TBL">
+</chain>
+<chain chainName="L2BRIDGING_BRIDGE_PORT_TBL">
+</chain>
+<chain chainName="L2BRIDGING_BRIDGE_VLAN_TBL">
+</chain>
+<chain chainName="VLAN_GROUP_TBL">
+</chain>
+<chain chainName="IPV6_ROUTE_TBL">
+</chain>
+<chain chainName="EPON_LLID_TBL">
+</chain>
+<chain chainName="CWMP_TRANSFER_QUEUE">
+</chain>
+<chain chainName="CWMP_ACL_IP_TBL">
+</chain>
+</Config_Information_File_8671>
